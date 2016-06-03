@@ -1,0 +1,517 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern Lucida Console;}{\f2\fmodern\fcharset0 Lucida Console;}}
+{\colortbl ;\red0\green0\blue255;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red96\green96\blue255;\red64\green255\blue255;\red0\green191\blue191;\red191\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2509;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22\par
+\par
+                                                       \ul\b GIT HUB Commands\ulnone\b0\par
+Commands - \par
+1. step1 - download git and install\par
+2. step2 - git config --global user.name "priyamaurya"\par
+3. step3 - git config --global user.email "priya.maurya1015@gmail.com"\par
+4. create repo in github portal and copy the address - like {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/ReactJSExamples.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/ReactJSExamples.git}}}\f0\fs22\par
+\pard\sa200\sl240\slmult1 5. in git bash to change the directory use the command - \par
+In windows to change drives You use:\par
+\b D:\b0  And this is done!  In Git Bash drives are "mounted" in root :)\par
+\b cd  /D\b0\par
+\pard\sa200\sl276\slmult1 6. git clone\par
+\cf2\f1\fs18 Silicon Computers@Sys \cf3 MINGW64 \cf4 /\par
+\cf0 $ git config --global user.name "priyamaurya"\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /\par
+\cf0 $ git config--global user.email "priya.maurya1015@gmail.com"\par
+git: 'config--global' is not a git command. See 'git --help'.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /\par
+\cf0 $ git config --global user.email "priya.maurya1015@gmail.com"\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /c\par
+\cf0 $ cd /C\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C\par
+\cf0 $ ls\par
+\cf5 '$Recycle.Bin'\cf0 /            hiberfil.sys            \cf5 Recovery\cf0 /\par
+appmanager.txt             \cf5 Intel\cf0 /                  \cf5 Ruby200\cf0 /\par
+appverifier.txt            \cf5 JAVA\cf0 /                   \cf5 RubyTraining\cf0 /\par
+\cf5 chittipassportandvisa\cf0 /     logger.txt              screenshot.png\par
+\cf5 data\cf0 /                      \cf5 MSOCache\cf0 /               \cf5 swsetup\cf0 /\par
+\cf5 DevKit\cf0 /                    pagefile.sys            \cf5 'System Volume Information'\cf0 /\par
+\cf6 'Documents and Settings'\cf0 @  \cf5 PerfLogs\cf0 /               \cf5 Temp\cf0 /\par
+getting_started.py         \cf5 'Program Files'\cf0 /        \cf5 test\cf0 /\par
+hello.py                   \cf5 'Program Files (x86)'\cf0 /  \cf5 Users\cf0 /\par
+hello_bottle.py            \cf5 ProgramData\cf0 /            \cf5 Windows\cf0 /\par
+hello_world.py             \cf5 Python27\cf0 /\par
+hello_world.tpl            qtptest.txt\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C\par
+\cf0 $ mkdir Github\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C\par
+\cf0 $ cd github\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ git clone {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/ReactJSExamples.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/ReactJSExamples.git}}}\f1\fs18\par
+Cloning into 'ReactJSExamples'...\par
+remote: Counting objects: 3, done.\par
+remote: Compressing objects: 100% (2/2), done.\par
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\par
+Unpacking objects: 100% (3/3), done.\par
+Checking connectivity... done.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd ReactJSExamples/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ ls\par
+README.md\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git checkout -- <file>..." to discard changes in working directory)\par
+\par
+        \cf8 modified:   README.md\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $  git add README.md\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git commit -help\par
+usage: git commit [<options>] [--] <pathspec>...\par
+\par
+    -q, --quiet           suppress summary after successful commit\par
+    -v, --verbose         show diff in commit message template\par
+\par
+Commit message options\par
+    -F, --file <file>     read message from file\par
+    --author <author>     override author for commit\par
+    --date <date>         override date for commit\par
+    -m, --message <message>\par
+                          commit message\par
+    -c, --reedit-message <commit>\par
+                          reuse and edit message from specified commit\par
+    -C, --reuse-message <commit>\par
+                          reuse message from specified commit\par
+    --fixup <commit>      use autosquash formatted message to fixup specified co                                                                                                                mmit\par
+    --squash <commit>     use autosquash formatted message to squash specified c                                                                                                                ommit\par
+    --reset-author        the commit is authored by me now (used with -C/-c/--am                                                                                                                end)\par
+    -s, --signoff         add Signed-off-by:\par
+    -t, --template <file>\par
+                          use specified template file\par
+    -e, --edit            force edit of commit\par
+    --cleanup <default>   how to strip spaces and #comments from message\par
+    --status              include status in commit message template\par
+    -S, --gpg-sign[=<key-id>]\par
+                          GPG sign commit\par
+\par
+Commit contents options\par
+    -a, --all             commit all changed files\par
+    -i, --include         add specified files to index for commit\par
+    --interactive         interactively add files\par
+    -p, --patch           interactively add changes\par
+    -o, --only            commit only specified files\par
+    -n, --no-verify       bypass pre-commit hook\par
+    --dry-run             show what would be committed\par
+    --short               show status concisely\par
+    --branch              show branch information\par
+    --porcelain           machine-readable output\par
+    --long                show status in long format (default)\par
+    -z, --null            terminate entries with NUL\par
+    --amend               amend previous commit\par
+    --no-post-rewrite     bypass post-rewrite hook\par
+    -u, --untracked-files[=<mode>]\par
+                          show untracked files, optional modes: all, normal, no.                                                                                                                 (Default: all)\par
+\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git commit -m "updated the file for defect fix -1"\par
+[master 1eb3444] updated the file for defect fix -1\par
+ 1 file changed, 2 insertions(+)\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git log\par
+\cf4 commit 1eb3444776413f09e33b48ddab2ccd830c1fe507\par
+\cf0 Author: priyamaurya <priya.maurya1015@gmail.com>\par
+Date:   Thu Jun 2 13:55:15 2016 +0100\par
+\par
+    updated the file for defect fix -1\par
+\par
+\cf4 commit c40b7376d59cf899396f6cc5cebcbb931bff963b\par
+\cf0 Author: priyamaurya <priya.maurya1015@gmail.com>\par
+Date:   Thu Jun 2 10:30:08 2016 +0100\par
+\par
+    Initial commit\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is ahead of 'origin/master' by 1 commit.\par
+  (use "git push" to publish your local commits)\par
+nothing to commit, working directory clean\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git remote add origin {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/ReactJSExamples.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/ReactJSExamples.git}}}\f1\fs18\par
+fatal: remote origin already exists.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git push -u origin master\par
+Username for '{\field{\*\fldinst{HYPERLINK "https://github.com"}}{\fldrslt{\ul\cf1 https://github.com}}}\f1\fs18 ': priyamaurya\par
+Counting objects: 3, done.\par
+Delta compression using up to 4 threads.\par
+Compressing objects: 100% (2/2), done.\par
+Writing objects: 100% (3/3), 351 bytes | 0 bytes/s, done.\par
+Total 3 (delta 0), reused 0 (delta 0)\par
+To {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/ReactJSExamples.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/ReactJSExamples.git}}}\f1\fs18\par
+   c40b737..1eb3444  master -> master\par
+Branch master set up to track remote branch master from origin.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ touch index1.html\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ ls\par
+index1.html  README.md\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+\par
+        \cf8 index1.html\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git add index1.html\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git commit -m "this is index1.html"\par
+[master f70fb8b] this is index1.html\par
+ 1 file changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 index1.html\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git log\par
+\cf4 commit f70fb8bd030c98e0921da576d952b7d06a48d83f\par
+\cf0 Author: priyamaurya <priya.maurya1015@gmail.com>\par
+Date:   Thu Jun 2 14:04:19 2016 +0100\par
+\par
+    this is index1.html\par
+\par
+\cf4 commit 1eb3444776413f09e33b48ddab2ccd830c1fe507\par
+\cf0 Author: priyamaurya <priya.maurya1015@gmail.com>\par
+Date:   Thu Jun 2 13:55:15 2016 +0100\par
+\par
+    updated the file for defect fix -1\par
+\par
+\cf4 commit c40b7376d59cf899396f6cc5cebcbb931bff963b\par
+\cf0 Author: priyamaurya <priya.maurya1015@gmail.com>\par
+Date:   Thu Jun 2 10:30:08 2016 +0100\par
+\par
+    Initial commit\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is ahead of 'origin/master' by 1 commit.\par
+  (use "git push" to publish your local commits)\par
+nothing to commit, working directory clean\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git push\par
+Username for '{\field{\*\fldinst{HYPERLINK "https://github.com"}}{\fldrslt{\ul\cf1 https://github.com}}}\f1\fs18 ': priyamaurya\par
+Counting objects: 3, done.\par
+Delta compression using up to 4 threads.\par
+Compressing objects: 100% (2/2), done.\par
+Writing objects: 100% (3/3), 286 bytes | 0 bytes/s, done.\par
+Total 3 (delta 0), reused 0 (delta 0)\par
+To {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/ReactJSExamples.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/ReactJSExamples.git}}}\f1\fs18\par
+   1eb3444..f70fb8b  master -> master\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/ReactJSExamples\cf7  (master)\par
+\cf0 $ git pull origin master\par
+From {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/ReactJSExamples"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/ReactJSExamples}}}\f1\fs18\par
+ * branch            master     -> FETCH_HEAD\par
+Already up-to-date.\par
+\lang1033\f2 ===============================================================\lang9\f1\par
+\lang1033\f2 Merge conflict explaned - \par
+\cf2\lang9\f1 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd priyarepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo\par
+\cf0 $ cd ..\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ mkdir harirepo\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ ls\par
+\cf5 harirepo\cf0 /  \cf5 priyarepo\cf0 /  \cf5 ReactJSExamples\cf0 /\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd priyarepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo\par
+\cf0 $ git clone {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial.git}}}\f1\fs18\par
+Cloning into 'Github-tutorial'...\par
+remote: Counting objects: 3, done.\par
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\par
+Unpacking objects: 100% (3/3), done.\par
+Checking connectivity... done.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo\par
+\cf0 $ cd ..\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd harirepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo\par
+\cf0 $ git clone {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial.git}}}\f1\fs18\par
+Cloning into 'Github-tutorial'...\par
+remote: Counting objects: 3, done.\par
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\par
+Unpacking objects: 100% (3/3), done.\par
+Checking connectivity... done.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo\par
+\cf0 $ ls\par
+\cf5 Github-tutorial\cf0 /\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo\par
+\cf0 $ cd Github-tutorial/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ ls\par
+README.md\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ cd ../..\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd priyarepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo\par
+\cf0 $ cd Github-tutorial/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ ls\par
+README.md\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+nothing to commit, working directory clean\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git checkout -- <file>..." to discard changes in working directory)\par
+\par
+        \cf8 modified:   README.md\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git add .\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        \cf2 modified:   README.md\par
+\par
+\par
+Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git commit -m "priya edited this file"\par
+[master 2225095] priya edited this file\par
+ 1 file changed, 3 insertions(+), 1 deletion(-)\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git config --global user.name "haripillai"\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git config --global user.email "hari.try@gmail.com"\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ cd ../..\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd harirepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo\par
+\cf0 $ cd Github-tutorial/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git checkout -- <file>..." to discard changes in working directory)\par
+\par
+        \cf8 modified:   README.md\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git add .\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+Changes to be committed:\par
+  (use "git reset HEAD <file>..." to unstage)\par
+\par
+        \cf2 modified:   README.md\par
+\par
+\par
+Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git commit -m "this is edited by hari"\par
+[master 4b3a811] this is edited by hari\par
+ 1 file changed, 3 insertions(+), 1 deletion(-)\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git push origin master\par
+Username for '{\field{\*\fldinst{HYPERLINK "https://github.com"}}{\fldrslt{\ul\cf1 https://github.com}}}\f1\fs18 ': haripillai\par
+Counting objects: 3, done.\par
+Writing objects: 100% (3/3), 290 bytes | 0 bytes/s, done.\par
+Total 3 (delta 0), reused 0 (delta 0)\par
+To {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial.git}}}\f1\fs18\par
+   70a19fa..4b3a811  master -> master\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ cd ../...\par
+bash: cd: ../...: No such file or directory\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ cd ../..\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd priyarepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo\par
+\cf0 $ cd Github-tutorial/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git stauts\par
+git: 'stauts' is not a git command. See 'git --help'.\par
+\par
+Did you mean this?\par
+        status\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is ahead of 'origin/master' by 1 commit.\par
+  (use "git push" to publish your local commits)\par
+nothing to commit, working directory clean\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git push\par
+Username for '{\field{\*\fldinst{HYPERLINK "https://github.com"}}{\fldrslt{\ul\cf1 https://github.com}}}\f1\fs18 ': priyamaurya\par
+To {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial.git}}}\f1\fs18\par
+ ! [rejected]        master -> master (fetch first)\par
+error: failed to push some refs to '{\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutori"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutori}}}\f1\fs18                                                                                                                 al.git'\par
+hint: Updates were rejected because the remote contains work that you do\par
+hint: not have locally. This is usually caused by another repository pushing\par
+hint: to the same ref. You may want to first integrate the remote changes\par
+hint: (e.g., 'git pull ...') before pushing again.\par
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git pull origin master\par
+remote: Counting objects: 3, done.\par
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0\par
+Unpacking objects: 100% (3/3), done.\par
+From {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial}}}\f1\fs18\par
+ * branch            master     -> FETCH_HEAD\par
+   70a19fa..4b3a811  master     -> origin/master\par
+Auto-merging README.md\par
+CONFLICT (content): Merge conflict in README.md\par
+Automatic merge failed; fix conflicts and then commit the result.\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master|MERGIN\cf0                                                                                                                 \cf7 G)\par
+\cf0 $ git add .\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master|MERGIN\cf0                                                                                                                 \cf7 G)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch and 'origin/master' have diverged,\par
+and have 1 and 1 different commit each, respectively.\par
+  (use "git pull" to merge the remote branch into yours)\par
+All conflicts fixed but you are still merging.\par
+  (use "git commit" to conclude merge)\par
+\par
+Changes to be committed:\par
+\par
+        \cf2 modified:   README.md\par
+\par
+\par
+Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master|MERGING)\par
+\cf0 $ git commit -m "this is merge conflict resolved"\par
+[master 503ef4e] this is merge conflict resolved\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git push origin master\par
+Username for '{\field{\*\fldinst{HYPERLINK "https://github.com"}}{\fldrslt{\ul\cf1 https://github.com}}}\f1\fs18 ': priyamaurya\par
+Counting objects: 6, done.\par
+Delta compression using up to 4 threads.\par
+Compressing objects: 100% (4/4), done.\par
+Writing objects: 100% (6/6), 620 bytes | 0 bytes/s, done.\par
+Total 6 (delta 0), reused 0 (delta 0)\par
+To {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial.git"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial.git}}}\f1\fs18\par
+   4b3a811..503ef4e  master -> master\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ cd../..\par
+bash: cd../..: No such file or directory\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/priyarepo/Github-tutorial\cf7  (master)\par
+\cf0 $ cd ../..\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github\par
+\cf0 $ cd harirepo/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo\par
+\cf0 $ cd Github-tutorial/\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Your branch is up-to-date with 'origin/master'.\par
+nothing to commit, working directory clean\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $ git pull origin master\par
+remote: Counting objects: 6, done.\par
+remote: Compressing objects: 100% (4/4), done.\par
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0\par
+Unpacking objects: 100% (6/6), done.\par
+From {\field{\*\fldinst{HYPERLINK "https://github.com/priyamaurya/Github-tutorial"}}{\fldrslt{\ul\cf1 https://github.com/priyamaurya/Github-tutorial}}}\f1\fs18\par
+ * branch            master     -> FETCH_HEAD\par
+   4b3a811..503ef4e  master     -> origin/master\par
+Updating 4b3a811..503ef4e\par
+Fast-forward\par
+ README.md | 4 \cf2 +++\cf8 -\par
+\cf0  1 file changed, 3 insertions(+), 1 deletion(-)\par
+\par
+\cf2 Silicon Computers@Sys \cf3 MINGW64 \cf4 /C/github/harirepo/Github-tutorial\cf7  (master)\par
+\cf0 $\par
+\par
+\par
+\par
+\f0\fs22\par
+}
+ 
